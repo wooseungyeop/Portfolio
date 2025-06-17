@@ -1,14 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import DesktopNav from './DesktopNav';
 import FloatingButton from './FloatingButton';
 
 export default function Header() {
   const pathname = usePathname();
-  const [, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -19,7 +18,7 @@ export default function Header() {
         !menuRef.current.contains(target) &&
         !document.getElementById('menu-toggle')?.contains(target)
       ) {
-        setIsOpen(false);
+        // setIsOpen(false);  // 이 부분도 제거!
       }
     };
     document.addEventListener('mousedown', handleClickOutside);

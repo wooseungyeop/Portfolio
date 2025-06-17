@@ -1,5 +1,3 @@
-// components/ProjectDetail.tsx
-
 export default function ProjectDetail({
   period,
   roles,

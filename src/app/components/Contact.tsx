@@ -1,4 +1,3 @@
-// components/Contact.tsx
 "use client";
 import { useState, useEffect, useRef } from "react";
 import CardContainer from "./contact/CardContainer";

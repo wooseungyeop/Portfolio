@@ -1,4 +1,3 @@
-// src/app/api/contact/route.ts
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
@@ -10,7 +9,6 @@ export async function POST(req: Request) {
     auth: {
       user: process.env.GMAIL_USER,
       pass: process.env.GMAIL_PASS,
-      
     },
   });
   try {
