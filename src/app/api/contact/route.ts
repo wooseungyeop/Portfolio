@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ message: "메일 전송 성공!" });
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: "메일 전송 실패" }, { status: 500 });
   }
 }
