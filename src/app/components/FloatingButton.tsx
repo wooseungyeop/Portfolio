@@ -12,10 +12,11 @@ import {
 } from 'react-icons/fa';
 
 const navButtons = [
-  { label: 'About', href: '/about', icon: <FaUserAlt /> },
-  { label: 'Projects', href: '/projects', icon: <FaFolderOpen /> },
-  { label: 'Contact', href: '/contact', icon: <FaEnvelope /> },
+  { label: 'About', href: '#about', icon: <FaUserAlt /> },
+  { label: 'Projects', href: '#projects', icon: <FaFolderOpen /> },
+  { label: 'Contact', href: '#contact', icon: <FaEnvelope /> },
 ];
+
 
 export default function FloatingNav() {
   const [isOpen, setIsOpen] = useState(false);

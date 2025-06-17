@@ -14,7 +14,7 @@ export default function Contact() {
       const timer = setTimeout(() => {
         setInView(true);
         setAutoFlip(false);
-      }, 3000);
+      }, 5000);
       return () => clearTimeout(timer);
     }
   }, [autoFlip, inView]);

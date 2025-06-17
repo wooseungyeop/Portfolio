@@ -18,7 +18,6 @@ export default function Header() {
         !menuRef.current.contains(target) &&
         !document.getElementById('menu-toggle')?.contains(target)
       ) {
-        // setIsOpen(false);  // 이 부분도 제거!
       }
     };
     document.addEventListener('mousedown', handleClickOutside);

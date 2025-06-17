@@ -6,10 +6,10 @@ export interface NavItem {
   href: string;
 }
 
-export const navItems: NavItem[] = [
-  { label: 'About', href: '/about' },
-  { label: 'Projects', href: '/projects' },
-  { label: 'Contact', href: '/contact' },
+export const navItems = [
+  { label: 'About', href: '#about' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Contact', href: '#contact' },
 ];
 
 
